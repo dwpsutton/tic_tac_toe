@@ -18,6 +18,7 @@ class StateModel(object):
         self.transition_matrix = {}
         self.label_boards([' ' for i in range(self.MAX_GRID_SIZE)], 1)
         self.build_transition_matrix()
+        self.num_labels += 1
 
     def build_transition_matrix(self):
         '''
